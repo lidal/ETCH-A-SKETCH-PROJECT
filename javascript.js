@@ -1,7 +1,7 @@
 function createGrid(n){
 	
 	const body = document.querySelector('body')
-	const boxSize = 1000/n;
+	const boxSize = 600/n;
 	for(let i = 0; i<n; i++){
 		const row = document.createElement('div')
 		row.style.minHeight =`${boxSize}px`;
@@ -44,6 +44,7 @@ function listenForClear(){
 
 createGrid(50);
 listenForDraw();
+
 listenForClear();
 
 
